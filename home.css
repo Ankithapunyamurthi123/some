@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: aquamarine;
+}
+
+.main {
+    border: 1px solid white;
+    height: 500px;
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+    margin: 50px 0 0 500px;
+    background-color: aliceblue;
+    position: relative;
+    border-radius: 2%;
+    padding: 10px;
+    padding-left: 0px;
+}
+
+.first {
+    background-image: linear-gradient( pink, white, red);
+    
+    flex: 1; 
+   
+}
+
+img {
+    height: 100px;
+    width: 100px;
+}
+
+.two {
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    top: 50px;
+    left: -50px;
+}
+
+.third {
+    position: absolute;
+    top: 410px;
+    left: -10px;
+    display: block;
+    background-color: rgb(189, 191, 193);
+}
+
+.third img {
+    width: 90px;
+    height: 70px;
+    float: left;
+}
+
+.second {
+    position: absolute;
+    left: 340px;
+    background-color: aliceblue;
+  height: 490px;
+    padding: 50px;
+    
+}
+
+.second h1, p, h2, ol {
+    margin-bottom: 2rem;
+}
+h1 + p{
+    font-weight: lighter;
+    color: rgba(171, 195, 218, 0.829);
+}
+p+h2{
+    font-weight: lighter;
+    color: rgba(171, 195, 218, 0.829);
+}
+.second h2 {
+    margin-left: -30px;
+}
+
+.second h1 {
+    font-size: 30px;
+    margin-left: -15px;
+}
+
+button {
+    background-color: rgb(255, 85, 0);
+    border: none;
+    padding: 10px;
+    border-radius: 2px;
+    color: white;
+}
+span
+{
+    font-size: 30px;
+    color: red;
+}

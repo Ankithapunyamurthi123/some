@@ -1,0 +1,176 @@
+img {
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+}
+
+.layout {
+    position: absolute;
+    display: grid;
+ 
+    grid-template-areas: 
+        "grid1 grid1 grid1 grid1 grid1 grid1 grid1 grid1 grid1"
+        "grid1 grid1 grid1 grid1 grid1 grid1 grid1 grid1 grid1"
+        "grid1 grid1 grid1 grid1 grid1 grid1 grid1 grid1 grid1"
+        "grid2 grid2 grid2 grid3 grid3 grid3 grid3 grid3 grid3"
+        "grid2 grid2 grid2 grid3 grid3 grid3 grid3 grid3 grid3"
+        "grid4 grid4 grid4 grid4 grid4 grid4 grid5 grid5 grid5"
+        "grid4 grid4 grid4 grid4 grid4 grid4 grid5 grid5 grid5"
+        "grid6 grid6 grid6 grid7 grid7 grid7 grid5 grid5 grid5"
+        "grid6 grid6 grid6 grid7 grid7 grid7 grid5 grid5 grid5"
+        "grid8 grid8 grid8 grid8 grid8 grid9 grid9 grid9 grid9"
+        "grid8 grid8 grid8 grid8 grid8 grid9 grid9 grid9 grid9";
+    grid-template-columns: repeat(9, 120px);
+    grid-template-rows: repeat(11,120px);
+    padding-left: 50px;
+    gap:10px;
+
+}
+.grid1
+{
+    grid-area: grid1;
+    
+    color: rgb(25, 13, 13);
+    display: flex;
+    flex-direction: column;
+   justify-content:end;
+   background-color: rgb(50,60,100, 0.4);
+  
+   border-radius:2%;
+   padding-left: 10px;
+   
+
+}
+.grid1 p
+{
+    border: 1px solid white;
+    width: 100px;
+    background-color: aliceblue;
+    padding: 2px;
+
+   
+}
+
+.grid2
+{
+    grid-area: grid2;
+    background-color: rgba(165, 42, 42, 0.523);
+    
+    color: aliceblue;
+    padding: 30px;
+   
+}
+.grid3
+{
+    grid-area: grid3;
+    background-color: rgba(0, 0, 0, 0.422);
+    color: aliceblue;
+   padding-left: 10px;
+   padding-bottom: 10px;
+ 
+   
+}
+.entire
+{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    height: 100%;
+   
+
+}
+.entire p{
+    margin-bottom: 0;
+}
+.down p
+{
+    
+
+    border: 1px solid white;
+    width: 100px;
+    background-color: aliceblue;
+    color: black;
+    padding: 2px;
+}
+
+.grid4
+{
+    grid-area:grid4;
+    background-color: rgba(0, 255, 255, 0.61);
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding: 10px;
+    
+}
+.grid4 p
+{
+    margin-bottom: 0;
+    font-size: 30px;
+}
+.grid5
+{
+    grid-area: grid5;
+    background-color: rgba(137, 43, 226, 0.477);
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.grid5 p{
+    border: 1px solid white;
+    width: 100px;
+    background-color: aliceblue;
+    color: black;
+    margin-top: 0;
+    padding: 2px;
+    
+}
+
+.grid6 
+{
+    grid-area: grid6;
+    background-color: rgba(255, 228, 196, 0.642);
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.grid6 p
+{
+    margin-bottom: 0;
+    font-size: 30px;
+    
+}
+.grid7 
+{
+    grid-area: grid7;
+    background-color: rgba(165, 42, 42, 0.66);
+    padding: 10px;
+}
+
+.grid8
+{
+    grid-area: grid8;
+    background-color: rgba(210, 105, 30, 0.573);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.grid8 p
+{
+    margin-bottom: 0;
+    font-size: 30px;
+}
+.grid9
+{
+    grid-area: grid9;
+    background-color: rgba(100, 148, 237, 0.737);
+    
+    
+    padding-top: 50px;
+}
+.grid9 p
+{
+    text-align: center;
+}
